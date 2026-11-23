@@ -1,0 +1,51 @@
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--wine:#642a36;--gold:#c69a52;--paper:#f3ecdf;--ink:#29221f}
+body{background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif}
+a{text-decoration:none;color:inherit}
+header{height:80px;padding:0 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #d9cbb9}
+.logo{font:700 21px 'Playfair Display';letter-spacing:-.5px}.logo span{color:var(--wine)}
+nav{display:flex;align-items:center;gap:30px;font-size:12px;font-weight:700}
+.navbtn{background:var(--wine);color:white;padding:14px 18px}
+.menu{display:none;border:0;background:none;font-size:25px}
+.hero{padding:90px 8%;min-height:620px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:60px}
+.eyebrow,.tag{font-size:10px;letter-spacing:2px;color:var(--wine);font-weight:700}
+h1,h2,h3{font-family:'Playfair Display',serif}
+h1{font-size:clamp(50px,6.5vw,82px);line-height:1.05;margin:25px 0;letter-spacing:-2px}
+h1 i{color:var(--wine)}
+.hero p{color:#746b60;line-height:1.8;max-width:500px;margin-bottom:30px}
+.button{display:inline-block;background:var(--wine);color:white;padding:16px 23px;font-size:12px;font-weight:700}
+.hero-caption{font-size:9px;letter-spacing:2px;margin-top:35px;color:#8b7966}
+.archive-art{height:430px;background:#e6d9c5;position:relative;display:grid;place-items:center}
+.paper{position:absolute;width:230px;height:320px;box-shadow:0 15px 40px #3d251c22}
+.paper-back{background:#c3a67e;transform:rotate(12deg)}
+.paper-mid{background:#fff9ec;transform:rotate(-8deg)}
+.paper-front{background:#6a303a;color:#f8e9cd;padding:25px;display:flex;flex-direction:column;justify-content:space-between;transform:rotate(2deg)}
+.paper-front span,.paper-front small{font-size:8px;letter-spacing:2px}
+.paper-front strong{font:600 42px/1.05 'Playfair Display'}
+.seal{position:absolute;bottom:35px;right:35px;border:1px solid var(--gold);border-radius:50%;width:75px;height:75px;display:grid;place-items:center;text-align:center;font:700 12px 'Playfair Display';color:var(--wine)}
+.quote-band{background:var(--wine);color:#f8e9cd;text-align:center;padding:35px 10%;font:italic 22px 'Playfair Display'}
+.section{padding:95px 8%}.section h2{font-size:clamp(35px,5vw,58px);max-width:850px;margin:25px 0 40px}
+.columns{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.columns article{padding:30px;background:#fffaf1;border:1px solid #e5d8c6}
+.columns b,.workflow b{color:var(--wine);font-size:12px}
+h3{font-size:22px;margin:14px 0}
+.section p{font-size:14px;line-height:1.7;color:#82766a}
+.dark{background:#29221f;color:#f3ecdf}.dark .tag{color:var(--gold)}
+.feature-list{max-width:850px}
+.feature-list>div{display:grid;grid-template-columns:70px 1fr;gap:20px;padding:22px 0;border-bottom:1px solid #544943}
+.feature-list span{font:600 30px 'Playfair Display';color:var(--gold)}
+.feature-list p{color:#b8aaa0}
+.workflow{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.workflow>div{padding:20px 10px;border-top:1px solid var(--gold)}
+.opportunity{background:#e7dccb}
+.market{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.market>div{background:var(--wine);padding:30px;color:white}
+.market small{color:var(--gold);font-weight:700;letter-spacing:2px}
+.market p{color:#e0cfc5}
+.closing{text-align:center;background:var(--gold);padding:100px 8%}
+.closing .tag{color:var(--wine)}
+.closing h2{font-size:clamp(38px,6vw,68px);margin:25px auto 35px;max-width:800px}
+.closing .button{background:var(--wine)}
+footer{padding:30px 8%;display:flex;justify-content:space-between;align-items:center;font-size:11px;color:#796f65}
+@media(max-width:800px){.menu{display:block}nav{display:none;position:absolute;top:80px;left:0;width:100%;padding:25px;background:var(--paper);z-index:5;flex-direction:column}nav.open{display:flex}.hero{grid-template-columns:1fr;padding:65px 7%}.columns,.market{grid-template-columns:1fr 1fr}.workflow{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.columns,.market,.workflow{grid-template-columns:1fr}.section{padding:70px 7%}.hero{padding:60px 7%}.archive-art{height:370px}footer{flex-wrap:wrap;gap:15px}}
